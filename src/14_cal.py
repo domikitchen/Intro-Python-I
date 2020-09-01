@@ -30,3 +30,21 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+num = input('tip tap: ').split(' ')
+
+def thing(num):
+  if len(num) == 1 and num[0] == '':
+    print('no entry dumb dumb')
+    print(num)
+  elif len(num) == 1:
+    print('one entry')
+    print(num)
+  elif len(num) == 2:
+    print('two entry')
+    print(num)
+  else:
+    print('incorrect entry')
+    print(num)
+
+thing(num)
