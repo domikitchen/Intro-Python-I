@@ -12,7 +12,6 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # YOUR CODE HERE
 with open('./src/foo.txt') as f:
     print(f.read())
-    f.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -24,8 +23,6 @@ with open('./src/bar.txt', 'r+') as f:
     f.write('bar?\n')
     f.write('why named bar?\n')
     f.write('weird')
-    f.close()
 
 with open('./src/bar.txt') as f:
     print(f.read())
-    f.close()
